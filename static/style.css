@@ -1,0 +1,109 @@
+/* General Styles for all pages */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Specific styles for login page */
+body.login-page {
+    background-image: url('{{ url_for("static", filename="images/homepage.jpg") }}');
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+/* Specific styles for user and admin pages */
+body.user-page {
+    background-image: url('{{ url_for("static", filename="images/userpage.jpg") }}');
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+body.admin-page {
+    background-image: url('{{ url_for("static", filename="images/admin.jpg") }}');
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+/* Container for login, signup, and user pages */
+.container, .login-container {
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    padding: 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    background-color: #f8f9fa;
+    padding: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 4px;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.login-container {
+    width: 350px;
+}
+
+.container {
+    width: 80%;
+    max-width: 600px;
+}

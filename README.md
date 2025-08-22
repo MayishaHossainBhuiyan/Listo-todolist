@@ -1,4 +1,5 @@
 # Listo-todolist
-Made a small to-do list app using HTML, CSS, JavaScript, and Flask.
-In this website, users can log in, add tasks, delete tasks, and log out.
-It has a simple design and was built to practice both frontend and backend development.
+Listo is a web-based to-do list application designed to help users manage their tasks efficiently.
+It provides functionality for user authentication, task management, and an admin dashboard for managing users.
+The project is built using Flask for the backend, SQLite for database management, and Bootstrap for the user interface.
+This simple design and was built to practice both frontend and backend development.
